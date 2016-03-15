@@ -93,7 +93,7 @@ public class JUnitTestFutureMeeting {
     @Test
     public void testSetDate() {
     	Calendar date1 = new GregorianCalendar(2008, 01, 01, 23, 59, 59);
-    	futureMeeting[0].setDate(date1);
+    	futureMeeting[0].setDate(date1.toString());
         Calendar returnedDate = futureMeeting[0].getDate();
         assertEquals(date1, returnedDate);
     }
@@ -119,7 +119,7 @@ public class JUnitTestFutureMeeting {
     
     
     /**
-     * Test FutureMeeting constractor with empty notes ie "".
+     * Test FutureMeeting constructor with empty notes ie "".
      */
     @Test
     public void testFutureMeetingWithEmptyNotes() {

@@ -4,7 +4,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import utility.ReadWriteTextFile;
+import Utility.ReadWriteTextFile;
 
 
 public class ContactImpl implements Contact{
@@ -49,14 +49,39 @@ public class ContactImpl implements Contact{
 	public int getId(){
 		return this.id;
 	}
+	
+	/**
+	* Sets the ID of the contact.
+	*
+	* @argument 
+	* 		int id : Unique id of contact
+	*/
+	public void setId(int id){
+		this.id = id;
+	}
+	
 	/**
 	* Returns the name of the contact.
 	*
-	* @return the name of the contact.
+	* @argument 
+	* 	
+	*  	String name: Name of the Contact
 	*/
 	public String getName(){
 		return this.name;
 	}
+	
+	/**
+	* Sets the name of the contact.
+	*
+	* @return the name of the contact.
+	*/
+	public void setName(String name){
+		this.name = name;
+	}
+	
+	
+	
 	/**
 	* Returns our notes about the contact, if any.
 	*
@@ -68,6 +93,16 @@ public class ContactImpl implements Contact{
 	public String getNotes(){
 		return this.notes;
 	}
+	
+	/**
+	* Sets the name of the contact.
+	*
+	* @return the name of the contact.
+	*/
+	public void setNotes(String name){
+		this.name = name;
+	}
+	
 	/**
 	* Add notes about the contact.
 	*

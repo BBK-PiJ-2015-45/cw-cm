@@ -103,7 +103,7 @@ public class JUnitTestContact {
 	}
 	
 	/**
-	 * Test Contact constractor with empty notes ie "".
+	 * Test Contact constructor with empty notes ie "".
 	 */
 	@Test
 	public void testContactWithEmptyNotes() {
